@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Last Day of Frontend Class</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ff9a9e, #fecfef);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            background: #ffe6f0;
+            width: 85%;
+            max-width: 1000px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .image-section {
+            flex: 1;
+        }
+
+        .image-section img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .content-section {
+            flex: 1;
+            padding: 40px;
+            text-align: center;
+            color: #d63384;
+        }
+
+        h2 {
+            color: #ff1493;
+        }
+
+        button {
+            padding: 12px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 10px;
+            background-color: #ff69b4;
+            color: white;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+        }
+
+        #message {
+            margin-top: 20px;
+            display: none;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        .batch-name {
+            margin-top: 20px;
+            color: #880e4f;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- Left Side Image -->
+        <div class="image-section">
+            <img src="mam.png" alt="Madam Photo">
+        </div>
+
+        <!-- Right Side Content -->
+        <div class="content-section">
+            <h2>Last Day of Frontend Class</h2>
+            <button onclick="showMessage()">Click Here Mam</button>
+
+            <!-- Hidden Message Section -->
+            <div id="message">
+                <p>
+                    Madam mee classes start ayye mundu maaku HTML ante confusion, 
+                    CSS ante color magic ani anukunnaam, 
+                    JavaScript ante full bhayam kani meeru patience tho explain chesi 
+                    ma brain lo code upload chesaaru. Ippudu tag open cheyyadam kanna 
+                    confidence open cheyyadam easy ayyindi. Mee doubt clearing speed ki 
+                    Google kuda competition ivvaledu. Mee patience ki loading symbol kuda 
+                    match avvaledu. Honestly Madam, ma website lo structure unte adi mee valla, 
+                    beauty unte adi mee valla, logic unte adi kuda mee valla. 
+                    Thank you so much Madam. Ma life lo permanent best teacher ga save aipoyaaru...
+                    delete option kuda ledu. Mee smile ma frontend journey ki brightest highlight Madam.
+                </p>
+
+                <div class="batch-name">
+                    <hr>
+                    PFS 22 Batch
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
