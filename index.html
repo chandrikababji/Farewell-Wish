@@ -3,17 +3,20 @@
 <head>
     <title>Last Day of Frontend Class</title>
     <style>
-        body {
+
+        html, body {
             margin: 0;
             padding: 0;
+            height: 100%;
+        }
+
+        body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #ff9a9e, #fecfef);
+            background: url("myfrontend.jpeg") no-repeat center center;
+            background-size: cover;  
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            background: url("/frontend.jpeg") no-repeat center center/cover;
-
         }
 
         .container {
@@ -23,7 +26,7 @@
             max-width: 1000px;
             border-radius: 20px;
             overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
         }
 
         .image-section {
@@ -76,23 +79,21 @@
             font-weight: bold;
             letter-spacing: 1px;
         }
+
     </style>
 </head>
 <body>
 
     <div class="container">
-        
-        <!-- Left Side Image -->
+
         <div class="image-section">
             <img src="mam.png" alt="Madam Photo">
         </div>
 
-        <!-- Right Side Content -->
         <div class="content-section">
             <h2>Last Day of Frontend Class</h2>
-            <button onclick="showMessage()">Click Here Mam</button>
+            <button onclick="showMessage()">Click Here Mam 💗</button>
 
-            <!-- Hidden Message Section -->
             <div id="message">
                 <p>
                     Madam mee classes start ayye mundu maaku HTML ante confusion, 
